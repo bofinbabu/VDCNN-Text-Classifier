@@ -21,7 +21,7 @@ def load_ag_data():
 
     #test = pd.read_csv('data/ag_news_csv/test.csv', header=None)
     test = pd.read_csv("data/labeledTrainData.tsv", header= None, delimiter="\t", quoting=3)
-    test = test[:2000]
+    test = test[22000:]
     test = test.dropna()
     test = test[1:]
     #test = test[:500]
