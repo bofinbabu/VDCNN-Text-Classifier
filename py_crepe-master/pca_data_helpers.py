@@ -9,7 +9,7 @@ def load_ag_data():
     #train = pd.read_csv('data/ag_news_csv/train.csv', header=None)
 
     train = pd.read_csv("data/labeledTrainData.tsv", header= None, delimiter="\t", quoting=3)
-    train= train[:2200]
+    train= train[:22000]
     train = train.dropna()
     train = train[1:]
 
@@ -22,7 +22,7 @@ def load_ag_data():
 
     #test = pd.read_csv('data/ag_news_csv/test.csv', header=None)
     test = pd.read_csv("data/labeledTrainData.tsv", header= None, delimiter="\t", quoting=3)
-    test = test[:2000]
+    test = test[22000:]
     test = test.dropna()
     test = test[1:]
     #test = test[:500]
